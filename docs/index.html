@@ -6,9 +6,27 @@
         <title>[FCC]Technical Documentation Page</title>
         <!--same below-->
         <link rel="shortcut icon" href="https://battleoil.github.io/images/icon/favicon.png">
+        <style>
+            #navbar{
+                background:#744da9ED;
+                width:100%;
+                top:0;
+                left:0;
+                position:fixed;
+            }
+            #navbar:after{
+                contant:"";
+                filter:blur(5px);
+                opacity:0.8;
+            }
+            #nav ul{
+                display:flex;
+                flex-direction:row;
+            }
+        </style>
 </head>
 <body>
-    <section id="nav">
+    <section id="navbar">
         <ul>
             <a href="#project"><li>Work</li></a>
             <a href="https://battleoil.github.io/"><li>Blog</li></a>
@@ -20,37 +38,38 @@
         <h1>Welcome to my Webpage</h1>
         <h2>Scroll down for more content</h2>
     </section>
+    <section id="background_1"><img src="https://vll43g.dm.files.1drv.com/y4mIJUDPsWdVdVR8wHytmWvRklCEkD-BiPbxE6GT32WOrKs5SPz7It29j433yMhpyTmtSR3zv84Vl6cGbZVjUy8HpZktgpcb4WQEBEmKzZudJGGG14LhhtuPOsEeWwwkxY2_20X4hoaqgA8bXo3DctcmCbwe2w4ikLYi2KakZ_UgjBcglzqWyilXPG_Ifxj_5JLL41cTvQMIsc35KnDXsogpw?width=3840&height=2160&cropmode=none" width="3840" height="2160" /></section>
     <section id="projects">
         <h1>Take a look of my project</h1>
-        <section id="project 1">
-            <a href="https://battleoil.github.io/-FCC-Build-a-Tribute-Page/">
+        <section id="project_1">
+            <a href="https://battleoil.github.io/-FCC-Build-a-Tribute-Page/" target="_blank">
             <img>
-            <p>Tribute Page</p>
+            <p class="project-tile">Tribute Page</p>
             </a>
         </section>
-        <section id="project 2">
-            <a href="https://battleoil.github.io/-FCC-Build-a-Survey-Form/">
+        <section id="project_2">
+            <a href="https://battleoil.github.io/-FCC-Build-a-Survey-Form/" target="_blank">
             <img>
-            <p>Survey Form</p>
+            <p class="project-tile">Survey Form</p>
             </a>
         </section>
-        <section id="project 3">
-            <a href="https://battleoil.github.io/-FCC-Build-a-Product-Landing-Page/">
+        <section id="project_3">
+            <a href="https://battleoil.github.io/-FCC-Build-a-Product-Landing-Page/" target="_blank">
             <img>
-            <p>Product Landing Page</p>
+            <p class="project-tile">Product Landing Page</p>
             </a>
         </section>
-        <section id="project 4">
-            <a href="https://battleoil.github.io/-FCC-Technical-Documentation-Page/">
+        <section id="project_4">
+            <a href="https://battleoil.github.io/-FCC-Technical-Documentation-Page/" target="_blank">
             <img>
-            <p>Technical Documentation Page</p>
+            <p class="project-tile">Technical Documentation Page</p>
             </a>
         </section>
     </section>
     <section id="contact">
         <h1>Let's work together...</h1>
-        <a id="profile-link" href="https://www.freecodecamp.org/code_noob"><p>freeCodeCamp</p></a>
-        <a id="github" href="https://github.com/BattleOil"><p>Github</p></a>
+        <a id="profile-link" href="https://www.freecodecamp.org/code_noob" target="_blank"><p>freeCodeCamp</p></a>
+        <a id="github" href="https://github.com/BattleOil" target="_blank"><p>Github</p></a>
         <a id="email" href="mailto:battleoil@this_just_a_test.com"><p>Email</p></a>
     </section>
     <section id="bottom">
