@@ -20,6 +20,7 @@
                 height: 50px;
                 display: grid;
                 justify-content: flex-end;
+                z-index:998;
             }
             #navbar:after {
                 content: "";
@@ -28,9 +29,10 @@
                 width: 100%;
                 height: inherit;
                 position: absolute;
-                z-index: -1;
+                z-index: 997;
                 top: 0;
                 filter: blur(3px);
+                
             }
             #navbar ul {
                 display: flex;
@@ -38,6 +40,7 @@
                 font-size: 18px;
                 margin: auto;
                 list-style: none;
+                z-index:999;
             }
             #navbar ul a{
                 padding-right: 0.5em;
@@ -81,6 +84,7 @@
                 padding-top:50px;
                 display: flex;
                 flex-direction: column;
+                align-items: center;
             }
             #projects h1{
                 font-size: 5vh;
@@ -88,7 +92,7 @@
             #highlighter{
                 width: inherit;
                 height: 2.5vh;
-                background-color: #744da9;
+                background-color: #744da9D0;
                 position: relative;
                 top: -2.5vh;
                 z-index: -1;
