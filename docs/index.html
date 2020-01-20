@@ -82,10 +82,18 @@
                 display: flex;
                 flex-direction: column;
             }
-            #projects colum_1{
-                display: flex;
+            #projects h1{
+                font-size: 5vh;
             }
-            #projects colum_2{
+            #highlighter{
+                width: inherit;
+                height: 2.5vh;
+                background-color: #744da9;
+                position: relative;
+                top: -2.5vh;
+                z-index: -1;
+            }
+            #projects #colum{
                 display: flex;
             }
         </style>
@@ -105,8 +113,8 @@
     </section>
     <section id="background_1"></section>
     <section id="projects">
-        <h1>Take a look of my project</h1>
-        <div id="colum_1">
+        <h1>Take a look of my project<div id="highlighter"></div></h1>
+        <div id="colum">
         <section id="project_1">
             <a href="https://battleoil.github.io/-FCC-Build-a-Tribute-Page/" target="_blank">
             <img>
@@ -120,7 +128,7 @@
             </a>
         </section>
         </diV>
-        <div id="colum_2">
+        <div id="colum">
         <section id="project_3">
             <a href="https://battleoil.github.io/-FCC-Build-a-Product-Landing-Page/" target="_blank">
             <img>
