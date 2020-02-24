@@ -80,7 +80,7 @@
                 top:0;
             }
             #projects{
-                height:100vh;
+                height:max-content;
                 padding-top:50px;
                 display: flex;
                 flex-direction: column;
@@ -111,13 +111,22 @@
                         color:#FFF;
                         text-align:center;
                         height: inherit;
-                            display: flex;
-                            justify-content: center;
+                        display: flex;
+                        justify-content: center;
                 }
-                #contact{
-                            height: 100vh;
-    padding-top: 60px;
+
+                #contact {
+                    height: 100vh;
+                    padding-top: 60px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                 }
+                @media (max-width:820px){
+                 #colum{
+                         flex-direction: column;
+                        }
+            }
         </style>
 </head>
 <body>
@@ -166,10 +175,12 @@
         </div>
     </section>
     <section id="contact">
-        <h1>Let's work together...</h1>
+            <h1>Let's work together...<div id="highlighter"></div></h1>
+            <div id="colum">
         <a id="profile-link" href="https://www.freecodecamp.org/code_noob" target="_blank"><p>freeCodeCamp</p></a>
         <a id="github" href="https://github.com/BattleOil" target="_blank"><p>Github</p></a>
         <a id="email" href="mailto:battleoil@this_just_a_test.com"><p>Email</p></a>
+            </div>
     </section>
     <section id="bottom">
         <p>**This is just a fake portfolio for freecodecamp project. All the projects and contact details some of that detail are fake.</p>
